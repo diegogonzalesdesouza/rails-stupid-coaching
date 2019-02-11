@@ -1,2 +1,10 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<h1>Coach's answer</h1>
+<div class="question">
+  <p class="main-text"><%= @question %></p>
+  <p class="interlocutor">- You</p>
+</div>
+<div class="answer">
+  <p class="main-text"><%= @answer %></p>
+  <p class="interlocutor">- Coach</p>
+</div>
+<p><%= link_to 'Ask a new question', ask_path %></p>
